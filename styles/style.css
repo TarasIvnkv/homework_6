@@ -1,0 +1,93 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.rainbow{
+	width: 800px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 100px auto 0;
+}
+
+.rainbow li{
+	position: relative;
+	font-size: 20px;
+}
+
+.rainbow li:before{
+	content: '';
+	position: absolute;
+	top: -60px;
+    left: 50%;
+	transform: translateX(-50%);
+	display: block;
+	width: 0;
+	height: 0;
+	border: 20px solid #F54336;
+	border-radius: 50%;
+}
+
+.rainbow li:nth-child(2):before{
+	border: 20px solid #FF9901;
+}
+
+.rainbow li:nth-child(3):before{
+	border: 20px solid #FFEC3B;
+}
+
+.rainbow li:nth-child(4):before{
+	border: 20px solid #8CC44A;
+}
+
+.rainbow li:nth-child(5):before{
+	border: 20px solid #03AAF4;
+}
+
+.rainbow li:nth-child(6):before{
+	border: 20px solid #4051B6;
+}
+
+.rainbow li:nth-child(7):before{
+	border: 20px solid #9C27B0;
+}
